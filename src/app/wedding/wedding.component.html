@@ -1,0 +1,199 @@
+  <!--/ Nav Star /-->
+  <nav class="navbar navbar-b navbar-reduce navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll" href="#page-top">SP Studio</a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll active" routerLink='/home'>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="wedding.html">Wedding</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="studiophoto.html">Studio Photos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="events.html">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Nav End /-->
+
+  <!--/ Section Portfolio Star /-->
+  <section class="portfolio-mf sect-mt4 route">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="text-center">
+            <h3 class="title-b">
+              Photos
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4"  *ngFor="let user of Users; let i = index">
+          <a href="" data-lightbox="gallery-mf"  data-toggle="modal" data-target="#myModal" class="work-img">
+
+            <img [src]="user.avatar" class="mr-3" [alt]="user.name" class="img-fluid">
+
+          </a>
+          <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+              <!-- Modal content-->
+                            <button type="button" #closebutton class="close" data-dismiss="modal">&times;</button>
+
+                            <div class="modal-body">
+                              <!-- <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+                                <div ngxSlickItem *ngFor="let image of Users" class="slide">
+                                  <img src="{{ image.avatar }}" width="100%">
+                                </div>
+                              </ngx-slick-carousel>                -->
+                             </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- <div class="col-md-4">
+            <a href="../../assets/img/work-2.jpg" data-lightbox="gallery-mf"  data-toggle="modal" data-target="#myModal1" >
+              <div class="work-img">
+                <img src="../../assets/img/work-2.jpg" alt="" class="img-fluid">
+              </div>
+              <div class="modal fade" id="myModal1" role="dialog">
+                <div class="modal-dialog">
+
+                      <button type="button" #closebutton class="close" data-dismiss="modal">&times;</button>
+                    <div class="modal-body">
+                      <img src="../../assets/img/work-2.jpg" alt="" class="img-fluid">
+                    </div>
+
+                </div>
+              </div>
+            </a>
+        </div>
+        <div class="col-md-4">
+          <a href="../../assets/img/work-3.jpg" data-lightbox="gallery-mf"  data-toggle="modal" data-target="#myModal2" >
+            <div class="work-img">
+              <img src="../../assets/img/work-3.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="modal fade" id="myModal2" role="dialog">
+              <div class="modal-dialog">
+
+                    <button type="button" #closebutton class="close" data-dismiss="modal">&times;</button>
+                  <div class="modal-body">
+                    <img src="../../assets/img/work-3.jpg" alt="" class="img-fluid">
+                  </div>
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="../../assets/img/work-4.jpg" data-lightbox="gallery-mf"  data-toggle="modal" data-target="#myModal3" >
+            <div class="work-img">
+              <img src="../../assets/img/work-4.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="modal fade" id="myModal3" role="dialog">
+              <div class="modal-dialog">
+
+                    <button type="button" #closebutton class="close" data-dismiss="modal">&times;</button>
+                  <div class="modal-body">
+                    <img src="../../assets/img/work-4.jpg" alt="" class="img-fluid">
+                  </div>
+
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4">
+          <a href="../../assets/img/work-5.jpg" data-lightbox="gallery-mf"  data-toggle="modal" data-target="#myModal4" >
+            <div class="work-img">
+              <img src="../../assets/img/work-5.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="modal fade" id="myModal4" role="dialog">
+              <div class="modal-dialog">
+
+                    <button type="button" #closebutton class="close" data-dismiss="modal">&times;</button>
+                  <div class="modal-body">
+                    <img src="../../assets/img/work-5.jpg" alt="" class="img-fluid">
+                  </div>
+
+              </div>
+            </div>
+          </a>
+        </div> -->
+        <!-- <div class="col-md-4">
+          <a href="../../assets/img/work-6.jpg" data-lightbox="gallery-mf"  data-toggle="modal" data-target="#myModal5" >
+            <div class="work-img">
+              <img src="../../assets/img/work-6.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="modal fade" id="myModal5" role="dialog">
+              <div class="modal-dialog">
+
+                    <button type="button" #closebutton class="close" data-dismiss="modal">&times;</button>
+                  <div class="modal-body">
+                    <img src="../../assets/img/work-6.jpg" alt="" class="img-fluid">
+                  </div>
+
+              </div>
+            </div>
+          </a>
+        </div> -->
+        <div class="col-md-4">
+          <div class="work-box">
+            <a routerLink="/view">
+              <div class="work-img" style="background : black;">
+                <img src="../../assets/img/work-6.jpg" style="opacity: 0.2" class="img-fluid">
+                <div class="centered" >View More</div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!--/ Section Portfolio End /-->
+
+
+  <footer id="footer">
+    <div class="container">
+      <!--<div class="copyright">
+        &copy; Copyright <strong><span>Lonely</span></strong>. All Rights Reserved
+      </div>-->
+      <div class="credits">
+        <div class="social-links">
+          <a href="#" class="twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+          <a href="#" class="facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+          <a href="#" class="instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="#" class="linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </div>
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-lonely/ -->
+        <!--Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>-->
+
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
