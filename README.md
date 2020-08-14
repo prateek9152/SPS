@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # mean-stack-file-upload
 Angular 8 & Express File Upload Tutorial with Reactive Forms -  Learn to upload files and images in Angular MEAN Stack project using Multer NPM module.
 
@@ -11,3 +12,6 @@ Angular 8 & Express File Upload Tutorial with Reactive Forms -  Learn to upload 
   - `cd backend` to enter into the backend folder
   - `nodemon server` to start the nodemon server
   - `mongod` to start the mongoDB shell
+=======
+# SPS
+>>>>>>> 6550bad9bd192850df639451409718f1bb521eef
