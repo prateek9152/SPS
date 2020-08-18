@@ -1,9 +1,5 @@
-# mean-stack-file-upload
-Angular 8 & Express File Upload Tutorial with Reactive Forms -  Learn to upload files and images in Angular MEAN Stack project using Multer NPM module.
-
-## Step by Step Tutorial
-[Angular 8 & Express File Upload Tutorial with Reactive Forms](https://www.positronx.io/angular-8-express-file-upload-tutorial-with-reactive-forms/)
-
+# SPS
+Photography
 ## How to run the app?
 - Run `npm install` to install required dependencies.
 - Run `ng serve` to run the angular app
