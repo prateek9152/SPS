@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { NgModule } from '@angular/core';
+import { NgModule,CUSTOM_ELEMENTS_SCHEMA  } from '@angular/core';
 
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -19,6 +19,13 @@ import { ContactComponent } from './contact/contact.component';
 import { ContactService } from './contact.service';
 import { NgImageSliderModule } from 'ng-image-slider';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { CarouselModule } from 'ngx-owl-carousel-o';
+import { TabModule } from 'angular-tabs-component';
+import { TabsModule } from 'ngx-bootstrap/tabs';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +36,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     CreateWeddingComponent,
     ViewComponent,
     NguiInViewComponent,
-    ContactComponent
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
@@ -38,12 +45,18 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     AppRoutingModule,
     StickyNavModule,
     SlickCarouselModule,
+    // CarouselModule,
     NgImageSliderModule,
+    BrowserAnimationsModule,
+    TabModule,
+    TabsModule.forRoot()
   ],
   providers: [
     ContactService
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+
 })
 
 export class AppModule { }

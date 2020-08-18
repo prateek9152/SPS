@@ -32,10 +32,47 @@
   </div>
 </nav>
 <br><br><br><br><br>
+<div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="carousel-item" *ngFor="let image of Users let i = index" [ngClass]="{'active' : i == 0}">
+
+        <img class="d-block w-100" [src]="image.avatar" alt="First slide">
+
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+
+    </a>
+  </div>
+</div>
 <div class="card-columns">
-<div class="card" *ngFor="let user of Users; let i = index">
-  <ngui-in-view>
-    <img *ngIf [src]="user.avatar" class="mr-3" [alt]="user.name" class="card-img-top" height="33%">
-  </ngui-in-view>
-</div>
-</div>
+  <div class="card" *ngFor="let user of Users; let i = index">
+    <ngui-in-view>
+      <img *ngIf [src]="user.avatar" class="mr-3" [alt]="user.name" class="card-img-top" height="33%">
+    </ngui-in-view>
+  </div>
+  </div>
+
+<!-- <owl-carousel-o [options]="customOptions">
+
+  <ng-template carouselSlide *ngFor="let slide of Users" [id]="slide.id">
+    <img [src]="slide.avatar" [alt]="slide.alt" [title]="slide.title">
+  </ng-template>
+
+</owl-carousel-o> -->

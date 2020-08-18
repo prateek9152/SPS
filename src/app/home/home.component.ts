@@ -1,5 +1,7 @@
 import { Component, OnInit,ViewChild,ElementRef,HostListener } from '@angular/core';
 import {DomSanitizer,SafeResourceUrl} from '@angular/platform-browser';
+import { FileUploadService } from '../shared/file-upload.service';
+import {Router,ActivatedRoute} from '@angular/router';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -8,13 +10,19 @@ import {DomSanitizer,SafeResourceUrl} from '@angular/platform-browser';
 export class HomeComponent implements OnInit {
   @ViewChild('closebutton',{static:false}) closebutton;
   @ViewChild('stickyMenu',{static:false}) menuElement:ElementRef;
+
   safeUrl:SafeResourceUrl;
   sticky: boolean = false;
   elementPosition: any;
   isShow: boolean;
   topPosToStartShowing = 100;
+  Users: any = [];
+  currDiv: string = 'A';
+  isShowDiv = false;
+  constructor(private _sanitizer:DomSanitizer,public fileUploadService: FileUploadService, private router:Router,private route: ActivatedRoute) {
+    this.getUsers();
 
-  constructor(private _sanitizer:DomSanitizer) { }
+  }
 
   ngOnInit(): void {
     this.safeUrl = this._sanitizer.bypassSecurityTrustResourceUrl('https://www.youtube.com/embed/AXgBwQpRec8?autoplay=1&mute=1');
@@ -25,7 +33,12 @@ export class HomeComponent implements OnInit {
   public onSave(){
     this.closebutton.nativeElement.click();
   }
+  getUsers() {
+    this.fileUploadService.getUsers().subscribe((res) => {
+      this.Users = res['users'];
+    })
 
+  }
   @HostListener('window:scroll', ['$event'])
     handleScroll(){
       const windowScroll = window.pageYOffset;
@@ -60,4 +73,7 @@ export class HomeComponent implements OnInit {
         behavior: 'smooth'
       });
     }
+    ShowDiv() {
+      this.isShowDiv = !this.isShowDiv;
+     }
 }

@@ -14,7 +14,13 @@ const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: 'add-user', component: CreateUserComponent },
   { path: 'users-list', component: UsersListComponent },
-  {path: 'home', component:HomeComponent},
+  {path: 'home', component:HomeComponent, children: [
+    {
+      path: 'wedding',component:WeddingComponent
+    },
+  ]
+
+},
   {path: 'wedding', component:WeddingComponent},
   {path: 'create-wedding',component:CreateWeddingComponent},
   {path: 'view',component:ViewComponent},
