@@ -23,7 +23,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import { CarouselModule } from 'ngx-owl-carousel-o';
 import { TabModule } from 'angular-tabs-component';
 import { TabsModule } from 'ngx-bootstrap/tabs';
-
+import { AboutComponent } from './about/about.component';
 
 
 @NgModule({
@@ -37,6 +37,7 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
     ViewComponent,
     NguiInViewComponent,
     ContactComponent,
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
@@ -49,7 +50,7 @@ import { TabsModule } from 'ngx-bootstrap/tabs';
     NgImageSliderModule,
     BrowserAnimationsModule,
     TabModule,
-    TabsModule.forRoot()
+    TabsModule.forRoot(),
   ],
   providers: [
     ContactService

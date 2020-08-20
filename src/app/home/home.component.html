@@ -19,7 +19,7 @@
             <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" routerLink="/about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="/wedding" routerLinkActive="active">Wedding</a>
@@ -63,7 +63,7 @@
         <div class="col-sm-12">
           <div class="text-center">
             <h3 class="title-a">
-              services
+              Services
             </h3>
           </div>
         </div>
@@ -105,49 +105,68 @@
   <!--/ Section Portfolio Star /-->
 
     <div *ngIf="!isShowDiv">
+    
       <div class="row">
+      <div class="col-sm-12">
+          <div class="text-center">
+            <h3 class="title-a">
+            Wedding Photos
+            </h3>
+            <!--<p class="subtitle-a">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="line-mf"></div>-->
+          </div>
+        </div>
+ 
         <div class="col-md-4"  *ngFor="let user of Users; let i = index">
-          <a href="" data-lightbox="gallery-mf"  data-toggle="modal" data-target="#myModal" class="work-img">
 
-            <img [src]="user.avatar" class="mr-3" [alt]="user.name" class="img-fluid">
+            <img [src]="user.avatar" class="mr-3" [alt]="user.name" class="img-fluid" data-toggle="modal" data-target="#B-2" alt="B-2">
 
-          </a>
-          <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
-              <!-- Modal content-->
-                            <button type="button" #closebutton class="close" data-dismiss="modal">&times;</button>
-
+          <div class="modal fade" id="B-2" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-lg">
+             <div class="modal-content">
+             <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
                             <div class="modal-body">
-                              <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                                <!-- Indicators -->
-                                <ol class="carousel-indicators">
-                                  <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                  <li data-target="#myCarousel" data-slide-to="1"></li>
-                                  <li data-target="#myCarousel" data-slide-to="2"></li>
-                                </ol>
+                                <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="2000">
 
-                                <!-- Wrapper for slides -->
-                                <div class="carousel-inner">
-                                  <div class="carousel-item" *ngFor="let image of Users let i = index" [ngClass]="{'active' : i == 0}">
+                                    <div class="carousel-inner row w-100 mx-auto" role="listbox">
 
+                                                <div class="carousel-item" *ngFor="let image of Users let i = index" [ngClass]="{'active' : i == 0}">
+                                      <div class="view">
                                     <img class="d-block w-100" [src]="image.avatar" alt="First slide">
-
+                                        </div>
                                   </div>
+
+
+                                      
+                                                       </div>
+
+                                    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+
+                                        <i style="color:#000; text-decoration: none;" class="fa fa-chevron-circle-left fa-2x"></i>
+
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+
+                                    <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+
+                                        <i style="color:#000; text-decoration: none;" class="fa fa-chevron-circle-right fa-2x"></i>
+
+                                        <span class="sr-only">Next</span>
+                                    </a>
+
                                 </div>
 
-                                <!-- Left and right controls -->
-                                <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
-                                  <span class="carousel-control-prev-icon"></span>
-
-                                </a>
-                                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-                                  <span class="carousel-control-next-icon"></span>
-
-                                </a>
-                              </div>
-                             </div>
-
-            </div>
+                            </div>
+                         
+                            
+             </div>               
+</div>
           </div>
 
         </div>
@@ -338,7 +357,7 @@
 
   <section id="photos" class="portfolio-mf sect-pt4 route">
     <div class="container">
-      <div class="row">
+      <div class="row" *ngIf="isShowDiv">
         <div class="col-sm-12">
           <div class="text-center">
             <h3 class="title-a">
@@ -351,22 +370,53 @@
           </div>
         </div>
       </div>
-      <div class="row">
+      <div class="row" *ngIf="isShowDiv">
         <div class="col-md-4"  *ngFor="let user of Users; let i = index">
-          <a href="" data-lightbox="gallery-mf"  data-toggle="modal" data-target="#myModal" class="work-img">
-            <img [src]="user.avatar" class="mr-3" [alt]="user.name" class="img-fluid">
-          </a>
-          <div class="modal fade" id="myModal" role="dialog">
-            <div class="modal-dialog">
+            <img [src]="user.avatar" class="mr-3" [alt]="user.name" class="img-fluid" data-toggle="modal" data-target="#B-3" alt="B-3" >
+          <div class="modal fade" id="B-3" tabindex="-1" role="dialog" aria-labelledby="modalLabelSmall" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
               <!-- Modal content-->
-                            <button type="button" #closebutton class="close" data-dismiss="modal">&times;</button>
-
+                            <div class="modal-content">
+                             <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
                             <div class="modal-body">
-                              <!-- <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
-                                <div ngxSlickItem *ngFor="let image of Users" class="slide">
-                                  <img src="{{ image.avatar }}" width="100%">
+                                <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="2000">
+
+                                    <div class="carousel-inner row w-100 mx-auto" role="listbox">
+
+                                                <div class="carousel-item" *ngFor="let image of Users let i = index" [ngClass]="{'active' : i == 0}">
+                                      <div class="view">
+                                    <img class="d-block w-100" [src]="image.avatar" alt="First slide">
+                                        </div>
+                                  </div>
+
+
+                                      
+                                                       </div>
+
+                                    <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+
+                                        <i style="color:#000; text-decoration: none;" class="fa fa-chevron-circle-left fa-2x"></i>
+
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+
+                                    <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
+
+                                        <i style="color:#000; text-decoration: none;" class="fa fa-chevron-circle-right fa-2x"></i>
+
+                                        <span class="sr-only">Next</span>
+                                    </a>
+
                                 </div>
-                              </ngx-slick-carousel>                -->
+
+                            </div>
+                            <!-- <div class="modal-footer">
+                                <button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+                            </div> -->
                              </div>
 
             </div>

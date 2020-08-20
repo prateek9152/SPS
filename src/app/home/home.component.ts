@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
   topPosToStartShowing = 100;
   Users: any = [];
   currDiv: string = 'A';
-  isShowDiv = false;
+  isShowDiv: boolean = true;
   constructor(private _sanitizer:DomSanitizer,public fileUploadService: FileUploadService, private router:Router,private route: ActivatedRoute) {
     this.getUsers();
 
@@ -74,6 +74,6 @@ export class HomeComponent implements OnInit {
       });
     }
     ShowDiv() {
-      this.isShowDiv = !this.isShowDiv;
+      this.isShowDiv =  this.isShowDiv ? false : true;
      }
 }

@@ -9,7 +9,7 @@ import { WeddingComponent } from './wedding/wedding.component';
 import { CreateWeddingComponent } from './create-wedding/create-wedding.component';
 import { ViewComponent } from './view/view.component';
 import { ContactComponent } from './contact/contact.component';
-
+import {AboutComponent} from './about/about.component';
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'home' },
   { path: 'add-user', component: CreateUserComponent },
@@ -24,7 +24,8 @@ const routes: Routes = [
   {path: 'wedding', component:WeddingComponent},
   {path: 'create-wedding',component:CreateWeddingComponent},
   {path: 'view',component:ViewComponent},
-  {path:'contact',component:ContactComponent}
+  {path:'contact',component:ContactComponent},
+  {path:'about',component:AboutComponent}
 ]
 
 @NgModule({

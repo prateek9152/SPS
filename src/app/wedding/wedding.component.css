@@ -1629,3 +1629,8 @@ footer .credits a {
   margin-left: 14px;
 
 }
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
