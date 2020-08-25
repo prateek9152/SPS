@@ -24,6 +24,8 @@ export class WeddingComponent implements OnInit {
   sliderSlideImage: Number = 1;
   sliderAnimationSpeed: any = 1;
   imageObject: Array<object> = [];
+  navbarOpen = false;
+  isShowDiv: boolean = true;
   constructor(public fileUploadService: FileUploadService) {
     this.getUsers();
    }
@@ -60,5 +62,7 @@ getUsers() {
     "dots": true,
     "infinite": true
   };
-
+  toggleNavbar(){
+    this.navbarOpen = !this.navbarOpen;
+  }
 }

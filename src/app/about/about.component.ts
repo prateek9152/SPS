@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
+  navbarOpen = false;
+  isShowDiv: boolean = true;
 
   constructor() { }
 
   ngOnInit() {
   }
-
+  toggleNavbar(){
+    this.navbarOpen = !this.navbarOpen;
+  }
 }

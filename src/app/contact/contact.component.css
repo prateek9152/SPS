@@ -433,6 +433,8 @@ a:hover {
 
 .navbar-b.navbar-trans .nav-link,
 .navbar-b.navbar-reduce .nav-link {
+  border-top: none;
+  border-bottom: none;
   color: #fff;
   text-transform: uppercase;
   font-weight: 600;
@@ -495,6 +497,7 @@ a:hover {
 
 .navbar-b.navbar-reduce .nav-link {
   color: #0078ff;
+
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
@@ -503,6 +506,7 @@ a:hover {
 
 .navbar-b.navbar-reduce .nav-link:hover {
   color: #0078ff;
+  font-size: 13px;
 }
 
 .navbar-b.navbar-reduce .show > .nav-link,
@@ -532,6 +536,7 @@ a:hover {
   -webkit-transform: translate3d(0px, 0px, 0px);
   transform: translate3d(0px, 0px, 0px);
   visibility: visible !important;
+
 }
 
 .navbar-b .dropdown-menu {
@@ -608,7 +613,13 @@ a:hover {
   transform: rotate(-135deg);
   opacity: 0.9;
 }
-
+.navbar-nav li a {
+  font-size: 17px;
+}
+.navbar-nav {
+  justify-content: flex-end;
+width: 100%;
+}
 /*======================================
 //--//-->   INTRO
 ======================================*/
@@ -1658,7 +1669,7 @@ margin-top: 26%;
 body {
   margin: 0;
   padding: 0;
-  
+
 }
 
 #contact {
@@ -1789,7 +1800,7 @@ body {
 }
 
 .social-media-list li {
-  position: relative; 
+  position: relative;
   top: 0;
   left: -20px;
   display: inline-block;
@@ -1800,7 +1811,7 @@ body {
   border-radius: 50%;
   color: #fff;
   background-color: rgb(27,27,27);
-  cursor: pointer; 
+  cursor: pointer;
   transition: all .2s ease-in-out;
 }
 
@@ -1819,11 +1830,11 @@ body {
 }
 
 .social-media-list li:hover {
-  background-color: #fff; 
+  background-color: #fff;
 }
 
 .social-media-list li:hover:after {
-  opacity: 1;  
+  opacity: 1;
   transform: scale(1.12);
   transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
 }
@@ -1854,11 +1865,11 @@ hr {
   .direct-contact-container, .form-horizontal {
     float: none;
     margin: 10px auto;
-  }  
+  }
   .direct-contact-container {
     margin-top: 60px;
     max-width: 300px;
-  }    
+  }
   .social-media-list li {
     height: 60px;
     width: 60px;
@@ -1881,19 +1892,19 @@ hr {
   .direct-contact-container, .form-wrapper {
     float: none;
     margin: 0 auto;
-  }  
+  }
   .form-control, textarea {
     max-width: 340px;
     margin: 0 auto;
   }
-  
+
   .name, .email, textarea {
     width: 280px;
-  } 
+  }
   .direct-contact-container {
     margin-top: 60px;
     max-width: 280px;
-  }  
+  }
   .social-media-list {
     left: 0;
   }
@@ -1908,7 +1919,7 @@ hr {
     height: 55px;
     line-height: 55px;
   }
-  
+
 }
 
 @media screen and (max-width: 410px) {
@@ -1923,7 +1934,13 @@ hr {
     background: #000;
     background: url("https://i.imgur.com/g63vXfd.jpg");
     background-size: cover;
-    width: 100%
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
 }
 
 .overlay {

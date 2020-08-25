@@ -9,6 +9,8 @@ import { ContactService } from '../contact.service';
 })
 export class ContactComponent implements OnInit {
   contatForm: FormGroup;
+  navbarOpen = false;
+  isShowDiv: boolean = true;
   constructor(private fb:FormBuilder,private contact:ContactService) {
    }
 
@@ -18,6 +20,9 @@ export class ContactComponent implements OnInit {
       email: ['',[Validators.compose([Validators.required,Validators.email])]],
       message: ['',[Validators.required]]
     });
+  }
+  toggleNavbar(){
+    this.navbarOpen = !this.navbarOpen;
   }
   contactForm(contatForm){
     console.log(contatForm);
@@ -56,4 +61,6 @@ export class ContactComponent implements OnInit {
 //     nav: true
 
 // }
+
+
 }

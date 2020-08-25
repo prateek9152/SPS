@@ -4,10 +4,10 @@
     <form [formGroup]="form" (ngSubmit)="submitForm()">
 
       <!-- Progress Bar -->
-      <div class="progress form-group" *ngIf="fileUploadService.percentDone">
-        <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+      <div class="progress form-group">
+        <!-- <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
           [style.width.%]="fileUploadService.percentDone">
-        </div>
+        </div> -->
       </div>
 
       <!-- Image Preview -->
