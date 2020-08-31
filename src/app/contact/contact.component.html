@@ -184,70 +184,81 @@ SP Studio
 <div class="wrapper">
      <div class="overlay">
       <div class="row d-flex justify-content-center align-items-center">
-          <div class="col-md-9">
-              <div class="contact-us text-center">
-                <div class="title-box text-center">
-          <h3 class="title-a">
-            Contact Us
-          </h3>
-        </div>
-                  <p class="mb-5"></p>
-                  <div class="row">
-                    <div class="col-md-6">
-                      <div class="info">
-<div>
-<h3>Send Message</h3>
-</div>
-<div class="mt-4 inputs">
-<form   [formGroup] = "contatForm" (ngSubmit)="contactForm(contatForm.value)">
+        <section id="contact">
 
-                      <input type="text" class="form-control" formControlName="name" placeholder="Name">
-                      <input type="email" class="form-control" placeholder="Email" formControlName="email">
-                      <textarea class="form-control" placeholder="Type your message" formControlName="message"></textarea>
-                      <button class="btn btn-dark" id="submit" type="submit" [disabled]="!contatForm.valid">Send</button>
-                </form>
-               </div>
+          <h1 class="section-header">CONTACT US</h1>
 
-               </div>
+          <div class="contact-wrapper">
 
-         </div>
-                      <!-- <div class="col-md-6">
-                          <div class="info">
-                              <div class="d-flex flex-row align-items-center"> <span class="icons"><i class="fa fa-map-marker"></i></span>
-                                  <div class="address text-left"> <span>Address</span>
-                                      <p> Mumbai, India</p>
-                                  </div>
-                              </div>
-                              <div class="d-flex flex-row align-items-center mt-3"> <span class="icons"><i class="fa fa-phone"></i></span>
-                                  <div class="address text-left"> <span>Phone</span>
-                                      <p></p>
-                                  </div>
-                              </div>
-                              <div class="d-flex flex-row align-items-center mt-3"> <span class="icons"><i class="fa fa-envelope-o"></i></span>
-                                  <div class="address text-left"> <span>Address</span>
-                                      <p></p>
-                                  </div>
-                              </div>
+              <!----------------
 
-                          </div>
+              CONTACT PAGE LEFT
 
-                      </div> -->
+              ----------------->
 
-
-                        <ul class="social-media-list">
-                          <hr>
-
-   <li><a href="#" target="_blank" class="contact-icon">
-     <i class="fa fa-facebook" aria-hidden="true"></i></a>
-   </li> &nbsp;&nbsp;
-   <li><a href="#" target="_blank" class="contact-icon">
-     <i class="fa fa-instagram" aria-hidden="true"></i></a>
-   </li>
-  </ul>
-  <hr>
-                  </div>
+            <form class="form-horizontal" role="form"  [formGroup] = "contatForm" (ngSubmit)="contactForm(contatForm.value)">
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="text" class="form-control" id="name" placeholder="NAME" formControlName="name" style="margin-left: 13px;" value="">
+                </div>
               </div>
+
+              <div class="form-group">
+                <div class="col-sm-12">
+                  <input type="email" class="form-control" id="email" placeholder="EMAIL" formControlName="email" style="margin-left: 13px;" value="">
+                </div>
+              </div>
+
+              <textarea class="form-control" rows="10" placeholder="MESSAGE" formControlName="message" style="margin-left: 26px;"></textarea>
+
+              <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+                <div class="button">
+                  <span class="send-text">SEND</span>
+                </div>
+
+              </button>
+
+            </form>
+
+              <!----------------
+
+              CONTACT PAGE RIGHT
+
+              ----------------->
+
+              <div class="direct-contact-container">
+
+                <ul class="contact-list">
+                  <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Mumbai | India</span></i></li>
+
+                  <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">8811902390</a></span></i></li>
+
+                  <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">emailme@gmail.com</a></span></i></li>
+
+                </ul>
+
+                <hr>
+                <ul class="social-media-list">
+                  <li><a href="#" target="_blank" class="contact-icon">
+                    <i class="fa fa-facebook" aria-hidden="true"></i></a>
+                  </li>
+                  <li><a href="#" target="_blank" class="contact-icon">
+                    <i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  </li>
+                  <li><a href="#" target="_blank" class="contact-icon">
+                    <i class="fa fa-instagram" aria-hidden="true"></i></a>
+                  </li>
+                 </ul>
+                <hr>
+
+
+              </div>
+
           </div>
+
+        </section>
+
+
       </div>
   </div>
 </div>

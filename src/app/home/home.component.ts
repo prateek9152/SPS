@@ -20,6 +20,10 @@ export class HomeComponent implements OnInit {
   currDiv: string = 'A';
   navbarOpen = false;
   isShowDiv: boolean = true;
+  isShowStudio: boolean = true;
+  selectedIndex = -1;
+  showTab = 1;
+
   constructor(private _sanitizer:DomSanitizer,public fileUploadService: FileUploadService, private router:Router,private route: ActivatedRoute) {
     this.getUsers();
 
@@ -39,6 +43,9 @@ export class HomeComponent implements OnInit {
       this.Users = res['users'];
     })
 
+  }
+  showDiv(index) {
+    this.selectedIndex = index;
   }
   @HostListener('window:scroll', ['$event'])
     handleScroll(){
@@ -79,5 +86,11 @@ export class HomeComponent implements OnInit {
      }
 toggleNavbar(){
   this.navbarOpen = !this.navbarOpen;
+}
+ShowStudio(){
+  this.isShowStudio = this.isShowStudio ? false : true;
+}
+tabToggle(index){
+  this.showTab =index;
 }
 }

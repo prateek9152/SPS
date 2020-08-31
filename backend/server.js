@@ -42,6 +42,7 @@ app.use('/api',weddingRoute)
 // Error favicon.ico
 app.get('/favicon.ico', (req, res) => res.status(204));
 
+app.use(express.static('mean-stack-file-upload'));
 
 const port = process.env.PORT || 4000;
 const server = app.listen(port, () => {

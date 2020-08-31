@@ -1,13 +1,3 @@
-/*
-  Theme Name: DevFolio
-  Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
-
-/*======================================
-//--//-->   STYLES GENERALES
-======================================*/
 
 body {
   background-color: #f5f5f5;
@@ -199,7 +189,7 @@ a:hover {
 .box-shadow-full {
   padding: 3rem 1.25rem;
   position: relative;
-  background-color: #fff;
+  /* background-color: #fff; */
   margin-bottom: 3rem;
   z-index: 2;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
@@ -638,6 +628,8 @@ width: 100%;
 .intro .intro-content {
   text-align: center;
   position: absolute;
+  margin-top: 300px;
+
 }
 
 .intro .overlay-itro {
@@ -655,6 +647,7 @@ width: 100%;
   color: #fff;
   font-weight: 600;
   font-size: 3rem;
+
 }
 
 .intro .intro-subtitle {
@@ -793,7 +786,7 @@ width: 100%;
 }
 
 .secondpage .image {
-  background: url("../../assets/img/work-5.jpg") center no-repeat;
+  background: url("../../assets/img/work-4.jpg") center no-repeat;
   background-size: cover;
   height: 80vh;
   width: 100%;
@@ -801,7 +794,7 @@ width: 100%;
 }
 
 .secondpage .image1 {
-  background: url("../../assets/img/work-5.jpg") center no-repeat;
+  background: url("../../assets/img/work-6.jpg") center no-repeat;
   background-size: cover;
   height: 80vh;
   width: 100%;
@@ -818,17 +811,19 @@ width: 100%;
 .secondpage .photo {
   background: url("../../assets/img/intro-bg.jpg") center no-repeat;
   background-size: cover;
-  min-height: 80vh;
   width: 100%;
+  height: 100px;
   text-align: center;
 }
 
 .linespacing h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  color: #fff;
+  font-size: 36px;
+  font-weight: 680;
+  background-color: Transparent;
+  color: #000;
+  background-repeat:no-repeat;
+
 }
 
 .linespacing h2 {
@@ -1657,20 +1652,7 @@ footer .credits a {
   margin-bottom: 5%;
 }
 
-.sticky{
-  width: 100%;
-  height:72px;
-  margin:0;
-  left:0;
-  right:0;
-  top:0;
-  background-color: blue;
-  overflow: hidden;
-  display: block;
-  position: sticky;
-  position: -webkit-sticky;
-  z-index: 5;
-}
+
 .affix {
   top: 0;
   width: 100%;
@@ -1728,5 +1710,36 @@ view{
   text-transform: uppercase;
   letter-spacing: 4.5px;
 }
+
+.modal.and.carousel {
+  position: fixed;
+}
+/* -------------------------------------------------- */
+img{ max-width:100%;}
+
+.gallery_box li{ width:33.333333%; max-width: 100% ; display:inline-block; float: left; text-align: center; overflow: hidden;    position: relative;}
+.gallery_box{ padding:0;display: flow-root;}
+
+.gallery_box li:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.gallery_box li img{-webkit-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;}
+.gallery_box li:nth-child(even) {
+    height: 304px;
+}
+.gallery_box li:nth-child(odd) {
+    height: 438px;
+}
+.gallery_box li:nth-child(odd) .box_data{ background:rgba(0,0,0,0.17) }
+.gallery_box li:nth-child(even) .box_data{ background:rgba(0,44,255,0.27) }
+.gallery_box .box_data{ position:absolute; top: 0; left: 0; right:0; bottom:0; color:#fff;}
+.gallery_box .box_data span{ position:absolute; top: 50%; transform: translateY(-50%); left:0 ; right:0; font-size:24px;}
+.gallery_box li:hover .box_data{ background:rgba(255,0,39,0.55)}
 
 
