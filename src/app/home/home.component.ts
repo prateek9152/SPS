@@ -93,4 +93,7 @@ ShowStudio(){
 tabToggle(index){
   this.showTab =index;
 }
+video(event){
+  event.toElement.play();
+}
 }

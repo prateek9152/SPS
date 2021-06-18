@@ -1,0 +1,164 @@
+<div class="bs-example" style="background-color: #000000;">
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top navbar-default">
+  <a class="navbar-brand" href="#">
+    SP Studio
+  </a>
+  <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+    <i class="fa fa-bars" aria-hidden="true"></i>    </button>
+ <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{'show': navbarOpen}">
+  <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+          <a class="nav-link" routerLink="/home">Home</a>
+      </li>
+
+      <li class="nav-item">
+          <a class="nav-link" routerLink="/about">About</a>
+      </li>
+
+      <li class="nav-item dropdown" dropdown>
+        <a class="nav-link dropdown-toggle" href (click)="false" id="navbarDropdown1" role="button"  aria-controls="navbarDropdown1" dropdownToggle>Wedding</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown1" *dropdownMenu role="menu" >
+         <li> <a class="dropdown-item" style="color: black;" routerLink="/engagement">Engagement</a></li>
+         <li> <a class="dropdown-item" style="color: black;" routerLink="/preweddingshoot">Pre Wedding Shoot</a> </li>
+         <li> <a class="dropdown-item" style="color: black;" routerLink="/preweddingfunction">Pre Wedding Function</a> </li>
+
+         <li> <a class="dropdown-item" style="color: black;" routerLink="/wedding">Wedding</a> </li>
+         <li> <a class="dropdown-item" style="color: black;" routerLink="/reception">Reception</a> </li>
+        </ul>
+      </li>
+    <li class="nav-item">
+      <a class="nav-link" routerLink="/studios" >Studio Photography</a>
+  </li>
+  <li class="nav-item dropdown" dropdown>
+    <a class="nav-link dropdown-toggle" href (click)="false" id="navbarDropdown2" role="button"  aria-controls="navbarDropdown2" dropdownToggle>Events</a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2" *dropdownMenu role="menu" >
+      <li> <a class="dropdown-item" style="color: black;" routerLink="/kidsportfolio">Kids Portfolio</a></li>
+      <li> <a class="dropdown-item" style="color: black;" routerLink="/birthdayparties">Birthday Parties</a> </li>
+      <li> <a class="dropdown-item" style="color: black;" routerLink="/celebration">Celebrations</a> </li>
+     </ul>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" routerLink="/testimonials" routerLinkActive="active" >Testimonials</a>
+  </li>
+<li class="nav-item">
+  <a class="nav-link" routerLink="/contact" >Contact</a>
+</li>
+    </ul>
+  </div>
+</nav>
+
+ <div class="testimonials-clean">
+      <div class="container" >
+          <div class="">
+              <h2 class="text-center" style="    margin-top: 41px;">Testimonials </h2>
+              <p class="text-center"></p>
+          </div>
+          <div class="row people">
+              <div class="col-md-6 col-lg-4 item">
+
+                <div class="box">
+                  <p class="description">Aenean tortor est, vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus est.</p>
+              </div>
+                <div class="author">
+                  <img class="rounded-circle" src="https://i.imgur.com/nUNhspp.jpg">
+                  <div class="userTitle"></div>
+                  <h5 class="name">Ben Johnson</h5>
+                  <p class="title">CEO of Company Inc.</p>
+              </div>
+
+              </div>
+              <div class="col-md-6 col-lg-4 item">
+                <div class="box">
+                  <p class="description">Praesent aliquam in tellus eu gravida. Aliquam varius finibus est, et interdum justo suscipit id.</p>
+              </div>
+                <div class="author"><img class="rounded-circle" src="https://i.imgur.com/o5uMfKo.jpg">
+                  <div class="userTitle"></div>
+                  <h5 class="name">Carl Kent</h5>
+                  <p class="title">Founder of Style Co.</p>
+              </div>
+
+
+              </div>
+              <div class="col-md-6 col-lg-4 item">
+                <div class="box">
+                  <p class="description">Aliquam varius finibus est, et interdum justo suscipit. Vulputate quis leo in, vehicula rhoncus lacus. Praesent aliquam in tellus eu.</p>
+              </div>
+                <div class="author"><img class="rounded-circle" src="https://i.imgur.com/At1IG6H.png">
+                  <div class="userTitle"></div>
+                  <h5 class="name">Emily Clark</h5>
+                  <p class="title">Owner of Creative Ltd.</p>
+              </div>
+
+
+              </div>
+          </div>
+      </div>
+  </div>
+  <footer class="site-footer">
+    <div  style="background-color: #26272b;">
+      <div class="row">
+        <div class="col-sm-4 col-md-4" style="margin-left: 42px;">
+          <h6>About</h6>
+
+          <p class="text-justify"><i>Shyam Creations</i></p>
+        </div>
+
+      <div class="col-xs-6 col-md-3" style="    margin-left: -137px;">
+          <h6>Wedding</h6>
+          <ul class="footer-links">
+            <li><a href="#" routerLink="/engagement">Engagement</a></li>
+            <li><a href="#" routerLink="/preweddingshoot">Pre Wedding Shoot</a></li>
+            <li><a href="#" routerLink="/preweddingfunction">Pre Wedding Function</a></li>
+            <li><a href="#" routerLink="/wedding">Wedding</a></li>
+            <li><a href="#" routerLink="/reception">Reception</a></li>
+
+          </ul>
+        </div>
+        <div class="col-xs-6 col-md-3">
+          <h6>Events</h6>
+          <ul class="footer-links">
+            <li><a href="#" routerLink="/kidsportfolio">Kids Portfolio</a></li>
+            <li><a href="#" routerLink="/birthdayparties">Birthday Parties</a></li>
+            <li><a href="#" routerLink="/celebration">Celebration</a></li>
+
+          </ul>
+        </div>
+
+
+        <div class="col-xs-4 col-md-2">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#" routerLink="/about">About Us</a></li>
+            <li><a href="#" routerLink="/studios">Studio Photography</a></li>
+
+            <li><a href="#/"routerLink="/contact">Contact Us</a></li>
+            <li><a href="#/"routerLink="/testimonials" >Testimonals</a></li>
+
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <div class="col-md-8 col-sm-6 col-xs-12">
+        <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by
+     <a href="#">Shyam Creations</a>.
+        </p>
+        <ul class="social-icons" style="    position: relative;
+        top: -33px; right: -331px;">
+          <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+          <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+
+
+    </div>
+    <!-- <div  style="background-color: #26272b;">
+      <div class="row">
+
+
+      </div>
+    </div> -->
+  </footer>
+  </div>

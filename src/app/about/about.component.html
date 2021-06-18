@@ -1,27 +1,47 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-default">
+
+  <div class="bs-example" style="background-color: #000000;">
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top navbar-default">
   <a class="navbar-brand" href="#">
     SP Studio
   </a>
   <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
     <i class="fa fa-bars" aria-hidden="true"></i>    </button>
- <div class="collapse navbar-collapse"[ngClass]="{'show': navbarOpen}">
+ <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{'show': navbarOpen}">
   <ul class="navbar-nav mr-auto">
       <li class="nav-item">
           <a class="nav-link" routerLink="/home">Home</a>
       </li>
 
       <li class="nav-item">
-          <a class="nav-link active" routerLink="/about" routerLinkActive="active" >About</a>
+          <a class="nav-link active" routerLink="/about" routerLinkActive="active">About</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/wedding" >Wedding</a>
-    </li>
+
+      <li class="nav-item dropdown" dropdown>
+        <a class="nav-link dropdown-toggle " href (click)="false" id="navbarDropdown1" role="button"  aria-controls="navbarDropdown1" dropdownToggle>Wedding</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown1" *dropdownMenu role="menu" >
+         <li> <a class="dropdown-item" style="color: black;" routerLink="/engagement">Engagement</a></li>
+         <li> <a class="dropdown-item" style="color: black;" routerLink="/preweddingshoot">Pre Wedding Shoot</a> </li>
+         <li> <a class="dropdown-item" style="color: black;" routerLink="/preweddingfunction">Pre Wedding Function</a> </li>
+
+         <li> <a class="dropdown-item" style="color: black;" routerLink="/wedding">Wedding</a> </li>
+         <li> <a class="dropdown-item" style="color: black;" routerLink="/reception">Reception</a> </li>
+        </ul>
+      </li>
     <li class="nav-item">
-      <a class="nav-link" routerLink="" >Studio Photos</a>
+      <a class="nav-link" routerLink="/studios" >Studio Photography</a>
+  </li>
+  <li class="nav-item dropdown" dropdown>
+    <a class="nav-link dropdown-toggle" href (click)="false" id="navbarDropdown2" role="button"  aria-controls="navbarDropdown2" dropdownToggle>Events</a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2" *dropdownMenu role="menu" >
+      <li> <a class="dropdown-item" style="color: black;" routerLink="/kidsportfolio">Kids Portfolio</a></li>
+      <li> <a class="dropdown-item" style="color: black;" routerLink="/birthdayparties">Birthday Parties</a> </li>
+      <li> <a class="dropdown-item" style="color: black;" routerLink="/celebration">Celebrations</a> </li>
+     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" routerLink="" >Events</a>
-</li>
+    <a class="nav-link" routerLink="/testimonials" >Testimonials</a>
+  </li>
 <li class="nav-item">
   <a class="nav-link" routerLink="/contact" >Contact</a>
 </li>
@@ -82,13 +102,13 @@
   </div>
   </div> -->
 
-  <div class="container">
- <div class="mission">
+  <div class="container" style="background-color: #000000;">
+ <div class="mission" style="background-color: #000000;">
 
-       <div class="left">
+       <div class="left" style="color: black;">
           <img src="https://images.unsplash.com/photo-1542038784456-1ea8e935640e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80">
        </div>
-         <div class="right">
+         <div class="right" style="color: white;">
           <h1>Mission Statement</h1>
           <hr>
           <p>Brought up in Mumbai City, ‘Photographer Name’ has been shooting life’s most wonderful minutes in the Big Apple and past for over 10 years. Her affection for this city and the mixture of differing societies drives her enthusiasm for shooting wedding festivities of different types.
@@ -97,7 +117,6 @@
                    <p>          Brought up in Mumbai City, ‘Photographer Name’ has been shooting life’s most wonderful minutes in the Big Apple and past for over 10 years. Her affection for this city and the mixture of differing societies drives her enthusiasm for shooting wedding festivities of different types.</p>
 
        </div>
-       <div class="clear"></div>
 
     </div>
 
@@ -175,4 +194,71 @@
 
 
  </div>
+ <footer class="site-footer">
+  <div  style="background-color: #26272b;">
+    <div class="row">
+      <div class="col-sm-4 col-md-4" style="margin-left: 42px;">
+        <h6>About</h6>
 
+        <p class="text-justify"><i style="position: relative;left: -15px;">Shyam Creations</i></p>
+      </div>
+
+    <div class="col-xs-6 col-md-3" style="    margin-left: -137px;">
+        <h6>Wedding</h6>
+        <ul class="footer-links">
+          <li><a href="#" routerLink="/engagement">Engagement</a></li>
+          <li><a href="#" routerLink="/preweddingshoot">Pre Wedding Shoot</a></li>
+          <li><a href="#" routerLink="/preweddingfunction">Pre Wedding Function</a></li>
+          <li><a href="#" routerLink="/wedding">Wedding</a></li>
+          <li><a href="#" routerLink="/reception">Reception</a></li>
+
+        </ul>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <h6>Events</h6>
+        <ul class="footer-links">
+          <li><a href="#" routerLink="/kidsportfolio">Kids Portfolio</a></li>
+          <li><a href="#" routerLink="/birthdayparties">Birthday Parties</a></li>
+          <li><a href="#" routerLink="/celebration">Celebration</a></li>
+
+        </ul>
+      </div>
+
+
+      <div class="col-xs-4 col-md-2">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="#" routerLink="/about">About Us</a></li>
+          <li><a href="#" routerLink="/studios">Studio Photography</a></li>
+
+          <li><a href="#/"routerLink="/contact">Contact Us</a></li>
+          <li><a href="#/"routerLink="/testimonials" >Testimonals</a></li>
+
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="col-md-8 col-sm-6 col-xs-12">
+      <p style="position: relative;
+    left: -232px;" class="copyright-text">Copyright &copy; 2021 All Rights Reserved by
+   <a href="#">Shyam Creations</a>.
+      </p>
+      <ul class="social-icons" style="    position: relative;
+      top: -33px; right: -331px;">
+        <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+        <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+        <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+
+
+  </div>
+  <!-- <div  style="background-color: #26272b;">
+    <div class="row">
+
+
+    </div>
+  </div> -->
+</footer>
+</div>

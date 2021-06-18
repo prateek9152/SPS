@@ -1,10 +1,10 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navbar-default">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top navbar-default">
   <a class="navbar-brand" href="#">
     SP Studio
   </a>
   <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
     <i class="fa fa-bars" aria-hidden="true"></i>    </button>
- <div class="collapse navbar-collapse"[ngClass]="{'show': navbarOpen}">
+ <div class="collapse navbar-collapse" id="navbarSupportedContent" [ngClass]="{'show': navbarOpen}">
   <ul class="navbar-nav mr-auto">
       <li class="nav-item">
           <a class="nav-link" routerLink="/home">Home</a>
@@ -13,17 +13,34 @@
       <li class="nav-item">
           <a class="nav-link" routerLink="/about">About</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/wedding" >Wedding</a>
-    </li>
+
+      <li class="nav-item dropdown" dropdown>
+        <a class="nav-link dropdown-toggle " href (click)="false" id="navbarDropdown1" role="button"  aria-controls="navbarDropdown1" dropdownToggle>Wedding</a>
+        <ul class="dropdown-menu" aria-labelledby="navbarDropdown1" *dropdownMenu role="menu" >
+         <li> <a class="dropdown-item" style="color: black;" routerLink="/engagement">Engagement</a></li>
+         <li> <a class="dropdown-item" style="color: black;" routerLink="/preweddingshoot">Pre Wedding Shoot</a> </li>
+         <li> <a class="dropdown-item" style="color: black;" routerLink="/preweddingfunction">Pre Wedding Function</a> </li>
+
+         <li> <a class="dropdown-item" style="color: black;" routerLink="/wedding">Wedding</a> </li>
+         <li> <a class="dropdown-item" style="color: black;" routerLink="/reception">Reception</a> </li>
+        </ul>
+      </li>
     <li class="nav-item">
-      <a class="nav-link" routerLink="" >Studio Photos</a>
+      <a class="nav-link" routerLink="/studios" >Studio Photography</a>
+  </li>
+  <li class="nav-item dropdown" dropdown>
+    <a class="nav-link dropdown-toggle" href (click)="false" id="navbarDropdown2" role="button"  aria-controls="navbarDropdown2" dropdownToggle>Events</a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2" *dropdownMenu role="menu" >
+      <li> <a class="dropdown-item" style="color: black;" routerLink="/kidsportfolio">Kids Portfolio</a></li>
+      <li> <a class="dropdown-item" style="color: black;" routerLink="/birthdayparties">Birthday Parties</a> </li>
+      <li> <a class="dropdown-item" style="color: black;" routerLink="/celebration">Celebrations</a> </li>
+     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" routerLink="" >Events</a>
-</li>
+    <a class="nav-link" routerLink="/testimonials" >Testimonials</a>
+  </li>
 <li class="nav-item">
-  <a class="nav-link active" routerLink="/contact" routerLinkActive="active">Contact</a>
+  <a class="nav-link active" routerLink="/contact" >Contact</a>
 </li>
     </ul>
   </div>

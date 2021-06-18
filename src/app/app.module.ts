@@ -24,7 +24,23 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TabModule } from 'angular-tabs-component';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { AboutComponent } from './about/about.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { CarouselComponent } from './carousel/carousel.component';
+import { EngagementComponent } from './engagement/engagement.component';
+import { PreweddingshootComponent } from './preweddingshoot/preweddingshoot.component';
+import { PreweddingfunctionComponent } from './preweddingfunction/preweddingfunction.component';
+import { WeddingsComponent } from './weddings/weddings.component';
+import { ReceptionComponent } from './reception/reception.component';
+import { KidsportfolioComponent } from './kidsportfolio/kidsportfolio.component';
+import { BirthdaypartiesComponent } from './birthdayparties/birthdayparties.component';
+import { CelebrationComponent } from './celebration/celebration.component';
+import { StudiosComponent } from './studios/studios.component';
+import { TestimonalsComponent } from './testimonals/testimonals.component';
+import { ViewmoreComponent } from './viewmore/viewmore.component';
+import { ViewmoreeventsComponent } from './viewmoreevents/viewmoreevents.component';
+import { StudiophotosComponent } from './studiophotos/studiophotos.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +54,20 @@ import { AboutComponent } from './about/about.component';
     NguiInViewComponent,
     ContactComponent,
     AboutComponent,
+    CarouselComponent,
+    EngagementComponent,
+    PreweddingshootComponent,
+    PreweddingfunctionComponent,
+    WeddingsComponent,
+    ReceptionComponent,
+    KidsportfolioComponent,
+    BirthdaypartiesComponent,
+    CelebrationComponent,
+    StudiosComponent,
+    TestimonalsComponent,
+    ViewmoreComponent,
+    ViewmoreeventsComponent,
+    StudiophotosComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,7 +80,9 @@ import { AboutComponent } from './about/about.component';
     NgImageSliderModule,
     BrowserAnimationsModule,
     TabModule,
+    NgbModule,
     TabsModule.forRoot(),
+    BsDropdownModule.forRoot()
   ],
   providers: [
     ContactService
