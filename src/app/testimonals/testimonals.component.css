@@ -19,6 +19,7 @@
     margin-bottom:25px;
     padding-top:25px;
     font-size:24px;
+    color:white;
   }
 }
 
@@ -72,7 +73,7 @@
 .testimonials-clean .item .name {
   font-weight:bold;
   margin-bottom:2px;
-  color:inherit;
+  color:white;
 }
 
 .testimonials-clean .item .title {
@@ -2350,7 +2351,43 @@ img{ max-width:100%;}
     font-weight:600
   }
 }
+@media (max-width:767px)
+  {
+    .textfooterheader1{
+      position: relative;left: 154px;
+    }
+    .footee{
+      text-align: center;
+    }
+    .weddingfooter{
+      margin-left: 262px;
+    }
+    .footerabout{
+      margin-left: -46px;
 
+    }
+    .secondimageall1{
+      text-align: center;
+    }
+    .thirdimageall1{
+      text-align: center;
+    }
+
+    .site-footer
+    {
+      padding-bottom:0
+    }
+    .site-footer .copyright-text,.site-footer .social-icons
+    {
+      text-align:center
+    }
+    .social-icons li.title
+    {
+      display:block;
+      margin-right:0;
+      font-weight:600
+    }
+  }
 .nav-link.active{
   border-bottom: 5px solid #FFFFFF;
 

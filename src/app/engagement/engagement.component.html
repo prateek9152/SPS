@@ -49,7 +49,9 @@
 </nav>
 <div class="header">
   <h1 class="page-heading">
-    <span class="page-heading-primary">Engagement</span>
+    <span class="page-heading-primary"  style="    color: white;
+    font-weight: bold;
+    font-size: 76%;">Engagement</span>
     <span class="page-heading-secondary"></span>
   </h1>
 </div>
@@ -125,7 +127,9 @@
  color: black; font-size:114%;"><label style="position: relative;
     top: -233px;">Project 1</label></div>
   </button> </div>
-  <div class="col-md-6" style="text-align: center;left: -321px;">
+  <div class="col-md-6">
+    <div class="secondimageall">
+      <div class="secondimageall1">
     <button type="button" value="click" style="    width: 381px;
     height: 220px;
     text-align: center;" (click)="showProject1()">
@@ -138,9 +142,11 @@
    color: black; font-size:114%;"><label style="position: relative;
       top: -233px;">Project 2</label></div>
     </button> </div>
-    <div class="col-md-6" style="text-align: center;     position: relative;
-    left: 869px;
-    top: -219px;">
+    </div>
+    </div>
+    <div class="col-md-6">
+      <!-- <div class="thirdimageall">
+
       <button type="button" value="click" style="    width: 381px;
       height: 220px;
       text-align: center;" (click)="showProject2()">
@@ -152,16 +158,16 @@
      text-align: center;
      color: black; font-size:114%;"><label style="position: relative;
         top: -233px;">Project 3</label></div>
-      </button> </div>
+      </button>
 
-
+</div> -->
+</div>
 </div>
 
 <div class="container" style="margin-top: 10px;">
     <div *ngIf="display">
 
-<div class="row" style="    margin-right: -11%;
-    margin-left: -12%;">
+<div class="row" >
 
 
       <div class="col-md-4" data-toggle="modal" data-target="#modal">
@@ -311,8 +317,7 @@
       </div>
       <div *ngIf="display1">
 
-        <div class="row" style="    margin-right: -11%;
-            margin-left: -12%;">
+        <div class="row" >
 
 
               <div class="col-md-4" data-toggle="modal" data-target="#modal">
@@ -625,14 +630,21 @@
 
  <footer class="site-footer">
   <div  style="background-color: #26272b;">
+    <div class="footee">
+
     <div class="row">
+
       <div class="col-sm-4 col-md-4" style="margin-left: 42px;">
+        <div class="footerabout">
+
         <h6>About</h6>
 
-        <p class="text-justify"><i>Shyam Creations</i></p>
+        <p class="text-justify"><i class="textfooterheader" ><i class="textfooterheader1">Shyam Creations</i></i></p>
       </div>
-
+</div>
     <div class="col-xs-6 col-md-3" style="    margin-left: -137px;">
+      <div class="weddingfooter">
+
         <h6>Wedding</h6>
         <ul class="footer-links">
           <li><a href="#" routerLink="/engagement">Engagement</a></li>
@@ -642,6 +654,7 @@
           <li><a href="#" routerLink="/reception">Reception</a></li>
 
         </ul>
+        </div>
       </div>
       <div class="col-xs-6 col-md-3">
         <h6>Events</h6>
@@ -666,13 +679,16 @@
         </ul>
       </div>
     </div>
+    </div>
     <hr>
     <div class="col-md-8 col-sm-6 col-xs-12">
-      <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by
+      <p class="copyright-text">
+        <p class="copyright-text1">
+        Copyright &copy; 2021 All Rights Reserved by
    <a href="#">Shyam Creations</a>.
-      </p>
-      <ul class="social-icons" style="    position: relative;
-      top: -33px; right: -331px;">
+  </p>
+
+      <ul class="social-icons">
         <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
         <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
         <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>

@@ -2291,6 +2291,11 @@ view{
   .site-footer .social-icons
   {
     text-align:right
+
+  }
+  .site-footer .social-icons ul {
+    position: relative;
+    top: -33px; right: -331px;
   }
   .site-footer .social-icons a
   {
@@ -2304,16 +2309,25 @@ view{
   }
   .copyright-text
   {
-    margin:0
+    margin:0;
+    position: relative;
+    left: -232px;
   }
   @media (max-width:991px)
   {
+    .copyright-text1
+    {
+      margin:0;
+      position: relative;
+      left: 5px;
+    }
     .site-footer [class^=col-]
     {
       margin-bottom:30px
     }
   }
   @media (max-width:767px)
+
   {
     .site-footer
     {
@@ -4406,6 +4420,19 @@ view{
   }
   @media (max-width:767px)
   {
+    .textfooterheader1{
+      position: relative;left: 154px;
+    }
+    .footee{
+      text-align: center;
+    }
+    .weddingfooter{
+      margin-left: 262px;
+    }
+    .footerabout{
+      margin-left: -46px;
+
+    }
     .site-footer
     {
       padding-bottom:0
@@ -4489,4 +4516,7 @@ view{
   .nav-link.active{
     border-bottom: 5px solid #FFFFFF;
 
+  }
+  .textfooterheader{
+    position: relative;left: -15px;
   }

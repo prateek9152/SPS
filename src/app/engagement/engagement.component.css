@@ -4008,15 +4008,45 @@ img{ max-width:100%;}
 {
   background-color:#ea4c89
 }
-@media (max-width:767px)
-{
-  .social-icons li.title
+
+  @media (max-width:767px)
   {
-    display:block;
-    margin-right:0;
-    font-weight:600
+    .textfooterheader1{
+      position: relative;left: 154px;
+    }
+    .footee{
+      text-align: center;
+    }
+    .weddingfooter{
+      margin-left: 262px;
+    }
+    .footerabout{
+      margin-left: -46px;
+
+    }
+    .secondimageall1{
+      text-align: center;
+    }
+    .thirdimageall1{
+      text-align: center;
+    }
+    .site-footer
+    {
+      padding-bottom:0
+    }
+    .site-footer .copyright-text,.site-footer .social-icons
+    {
+      text-align:center
+    }
+    .social-icons li.title
+    {
+      display:block;
+      margin-right:0;
+      font-weight:600
+    }
   }
-}
+
+
 .nav-link.active{
   border-bottom: 5px solid #FFFFFF;
 
@@ -4034,3 +4064,13 @@ img{ max-width:100%;}
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.secondimageall{
+  text-align: center;left: -321px;
+}
+.thirdimageall{
+  text-align: center;
+    position: relative;
+    left: 869px;
+    top: -219px;
+}
+
