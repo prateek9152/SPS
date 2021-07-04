@@ -26,10 +26,11 @@ export class WeddingComponent implements OnInit {
   imageObject: Array<object> = [];
   navbarOpen = false;
   isShowDiv: boolean = true;
-  showTab = 1;
   display = false;
   display1 = false;
   display2 = false;
+  display3 = false;
+  showTab = 1;
   constructor(public fileUploadService: FileUploadService) {
     this.getUsers();
    }
@@ -69,6 +70,7 @@ getUsers() {
   toggleNavbar(){
     this.navbarOpen = !this.navbarOpen;
   }
+
   tabToggle(index){
 		this.showTab =index;
 	  }
@@ -82,5 +84,10 @@ getUsers() {
      showProject2(){
       //  this.showProjects = true;
        this.display2 = !this.display2;
+     }
+
+     showProject3(){
+      //  this.showProjects = true;
+       this.display3 = !this.display3;
      }
 }

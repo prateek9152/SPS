@@ -1938,7 +1938,7 @@ view{
   }
   .mission .right h1{
     text-align:center;
-    color:#1EADFF;
+    color:#FFFFFF;
     margin:0 0 20px 0;
   }
   .mission .right hr{
@@ -2026,7 +2026,6 @@ view{
     background-color:#28587c;
   }
   footer p{
-    text-align:center;
     padding: 0 2% ;
   }
 
@@ -2320,6 +2319,7 @@ view{
       margin:0;
       position: relative;
       left: 5px;
+      top:-10px;
     }
     .site-footer [class^=col-]
     {
@@ -4439,14 +4439,19 @@ view{
     }
     .site-footer .copyright-text,.site-footer .social-icons
     {
-      text-align:center
+      text-align:center;
+      position: relative;
+      top: -1px;
+
     }
   }
   .social-icons
   {
     padding-left:0;
     margin-bottom:0;
-    list-style:none
+    list-style:none;
+    position: relative;
+    top: -57px;
   }
   .social-icons li
   {
@@ -4506,6 +4511,43 @@ view{
   }
   @media (max-width:767px)
   {
+    .textfooterheader1{
+      position: relative;left: 154px;
+    }
+    .footee{
+      text-align: center;
+    }
+    .weddingfooter{
+      margin-left: 262px;
+    }
+    .footerabout{
+      margin-left: -46px;
+
+    }
+    .firstimage1{
+     margin-top: 50px;
+    }
+    .secondimageall1{
+
+      text-align: center;
+      margin-top: 33px;
+      position: relative;
+      left: -1px;
+
+    }
+    .thirdimageall1{
+      text-align: center;
+      margin-top: 33px;
+    }
+    .site-footer
+    {
+      padding-bottom:0
+    }
+    .site-footer .copyright-text,.site-footer .social-icons
+    {
+      text-align:center
+    }
+
     .social-icons li.title
     {
       display:block;
@@ -4519,4 +4561,22 @@ view{
   }
   .textfooterheader{
     position: relative;left: -15px;
+  }
+  .secondimageall{
+    text-align: center;left: -321px;
+    margin-top: 10px;
+  }
+  .firstimage{
+    text-align: center;left: -321px;
+    margin-top: 10px;
+  }
+  .fourthimageall{
+    text-align: center;left: -321px;
+    margin-top: 17px;
+  }
+  .thirdimageall{
+    text-align: center;
+      position: relative;
+      left: 869px;
+      top: -219px;
   }

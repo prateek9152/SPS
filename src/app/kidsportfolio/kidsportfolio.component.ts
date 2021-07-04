@@ -27,14 +27,12 @@ export class KidsportfolioComponent implements OnInit {
   imageObject: Array<object> = [];
   navbarOpen = false;
   isShowDiv: boolean = true;
+  showTab = 1;
   display = false;
   display1 = false;
   display2 = false;
-  showTab = 1;
-      div1:boolean=true;
-    div2:boolean=true;
-    div3:boolean=true;
-    showProjects = false;
+  display3 = false;
+
   constructor(public fileUploadService: FileUploadService) {
     this.getUsers();
    }
@@ -77,35 +75,19 @@ getUsers() {
   tabToggle(index){
     this.showTab =index;
   }
-  update(){
+  showProject(){
     this.display = !this.display;
- }
- showProject(){
-  this.display = !this.display;
- }
- showProject1(){
-  //  this.showProjects = true;
-   this.display1 = !this.display1;
- }
- showProject2(){
-  //  this.showProjects = true;
-   this.display2 = !this.display2;
- }
-   div1Function(){
-        this.div1=true;
-        this.div2=false;
-        this.div3=false
-    }
-
-    div2Function(){
-        this.div2=true;
-        this.div1=false;
-        this.div3=false
-    }
-
-    div3Function(){
-        this.div3=true;
-        this.div2=false;
-        this.div1=false
-    }
+   }
+   showProject1(){
+    //  this.showProjects = true;
+     this.display1 = !this.display1;
+   }
+   showProject2(){
+    //  this.showProjects = true;
+     this.display2 = !this.display2;
+   }
+   showProject3(){
+    //  this.showProjects = true;
+     this.display3 = !this.display3;
+   }
 }

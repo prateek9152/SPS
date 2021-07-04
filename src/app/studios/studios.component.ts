@@ -29,6 +29,8 @@ export class StudiosComponent implements OnInit {
   display = false;
   display1 = false;
   display2 = false;
+  display3 = false;
+  showTab = 1;
   constructor(public fileUploadService: FileUploadService) {
     this.getUsers();
    }
@@ -68,15 +70,24 @@ getUsers() {
   toggleNavbar(){
     this.navbarOpen = !this.navbarOpen;
   }
-  showProject(){
-    this.display = !this.display;
-   }
-   showProject1(){
-    //  this.showProjects = true;
-     this.display1 = !this.display1;
-   }
-   showProject2(){
-    //  this.showProjects = true;
-     this.display2 = !this.display2;
-   }
+
+  tabToggle(index){
+		this.showTab =index;
+	  }
+    showProject(){
+      this.display = !this.display;
+     }
+     showProject1(){
+      //  this.showProjects = true;
+       this.display1 = !this.display1;
+     }
+     showProject2(){
+      //  this.showProjects = true;
+       this.display2 = !this.display2;
+     }
+
+     showProject3(){
+      //  this.showProjects = true;
+       this.display3 = !this.display3;
+     }
 }

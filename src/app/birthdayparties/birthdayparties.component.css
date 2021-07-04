@@ -3941,14 +3941,19 @@ img{ max-width:100%;}
   }
   .site-footer .copyright-text,.site-footer .social-icons
   {
-    text-align:center
+    text-align:center;
+    position: relative;
+    top: -2px;
+
   }
 }
 .social-icons
 {
   padding-left:0;
   margin-bottom:0;
-  list-style:none
+  list-style:none;
+  position: relative;
+  top: -57px;
 }
 .social-icons li
 {
@@ -4008,6 +4013,43 @@ img{ max-width:100%;}
 }
 @media (max-width:767px)
 {
+  .textfooterheader1{
+    position: relative;left: 154px;
+  }
+  .footee{
+    text-align: center;
+  }
+  .weddingfooter{
+    margin-left: 262px;
+  }
+  .footerabout{
+    margin-left: -46px;
+
+  }
+  .firstimage1{
+   margin-top: 50px;
+  }
+  .secondimageall1{
+
+    text-align: center;
+    margin-top: 33px;
+    position: relative;
+    left: -1px;
+
+  }
+  .thirdimageall1{
+    text-align: center;
+    margin-top: 33px;
+  }
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+
   .social-icons li.title
   {
     display:block;
@@ -4025,5 +4067,23 @@ img{ max-width:100%;}
   background: #FFF;
   padding: 15px;
   margin-bottom: 15px;
+}
+.secondimageall{
+  text-align: center;left: -321px;
+  margin-top: 10px;
+}
+.firstimage{
+  text-align: center;left: -321px;
+  margin-top: 10px;
+}
+.fourthimageall{
+  text-align: center;left: -321px;
+  margin-top: 17px;
+}
+.thirdimageall{
+  text-align: center;
+    position: relative;
+    left: 869px;
+    top: -219px;
 }
 

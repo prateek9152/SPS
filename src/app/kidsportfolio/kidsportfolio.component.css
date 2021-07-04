@@ -1080,7 +1080,6 @@ width: 100%;
 .card-blog .card-title {
   font-size: 1.3rem;
   margin-top: .6rem;
-  color:black;
 }
 
 .card-blog .card-description {
@@ -3025,7 +3024,6 @@ width: 100%;
 .card-blog .card-title {
   font-size: 1.3rem;
   margin-top: .6rem;
-  color:black;
 }
 
 .card-blog .card-description {
@@ -3943,14 +3941,19 @@ img{ max-width:100%;}
   }
   .site-footer .copyright-text,.site-footer .social-icons
   {
-    text-align:center
+    text-align:center;
+    position: relative;
+    top: -2px;
+
   }
 }
 .social-icons
 {
   padding-left:0;
   margin-bottom:0;
-  list-style:none
+  list-style:none;
+  position: relative;
+  top: -57px;
 }
 .social-icons li
 {
@@ -4008,45 +4011,52 @@ img{ max-width:100%;}
 {
   background-color:#ea4c89
 }
+@media (max-width:767px)
+{
+  .textfooterheader1{
+    position: relative;left: 154px;
+  }
+  .footee{
+    text-align: center;
+  }
+  .weddingfooter{
+    margin-left: 262px;
+  }
+  .footerabout{
+    margin-left: -46px;
 
-  @media (max-width:767px)
+  }
+  .firstimage1{
+   margin-top: 50px;
+  }
+  .secondimageall1{
+
+    text-align: center;
+    margin-top: 33px;
+    position: relative;
+    left: -1px;
+
+  }
+  .thirdimageall1{
+    text-align: center;
+    margin-top: 33px;
+  }
+  .site-footer
   {
-    .textfooterheader1{
-      position: relative;left: 154px;
-    }
-    .footee{
-      text-align: center;
-    }
-    .weddingfooter{
-      margin-left: 262px;
-    }
-    .footerabout{
-      margin-left: -46px;
-
-    }
-    .secondimageall1{
-      text-align: center;
-    }
-    .thirdimageall1{
-      text-align: center;
-    }
-    .site-footer
-    {
-      padding-bottom:0
-    }
-    .site-footer .copyright-text,.site-footer .social-icons
-    {
-      text-align:center
-    }
-    .social-icons li.title
-    {
-      display:block;
-      margin-right:0;
-      font-weight:600
-    }
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
   }
 
-
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
 .nav-link.active{
   border-bottom: 5px solid #FFFFFF;
 
@@ -4058,14 +4068,17 @@ img{ max-width:100%;}
   padding: 15px;
   margin-bottom: 15px;
 }
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .secondimageall{
   text-align: center;left: -321px;
+  margin-top: 10px;
+}
+.firstimage{
+  text-align: center;left: -321px;
+  margin-top: 10px;
+}
+.fourthimageall{
+  text-align: center;left: -321px;
+  margin-top: 17px;
 }
 .thirdimageall{
   text-align: center;

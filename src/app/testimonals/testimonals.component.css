@@ -11,7 +11,7 @@
   font-weight:bold;
   margin-bottom:40px;
   padding-top:40px;
-  color:inherit;
+  color:white;
 }
 
 @media (max-width:767px) {
@@ -2284,7 +2284,9 @@ img{ max-width:100%;}
 {
   padding-left:0;
   margin-bottom:0;
-  list-style:none
+  list-style:none;
+  position: relative;
+  top: -57px;
 }
 .social-icons li
 {
@@ -2366,13 +2368,21 @@ img{ max-width:100%;}
       margin-left: -46px;
 
     }
+    .firstimage1{
+     margin-top: 50px;
+    }
     .secondimageall1{
+
       text-align: center;
+      margin-top: 33px;
+      position: relative;
+      left: -1px;
+
     }
     .thirdimageall1{
       text-align: center;
+      margin-top: 33px;
     }
-
     .site-footer
     {
       padding-bottom:0
@@ -2470,6 +2480,23 @@ body {
   padding-top: 35px;
   padding-bottom: 50px
 }
-
+.secondimageall{
+  text-align: center;left: -321px;
+  margin-top: 10px;
+}
+.firstimage{
+  text-align: center;left: -321px;
+  margin-top: 10px;
+}
+.fourthimageall{
+  text-align: center;left: -321px;
+  margin-top: 17px;
+}
+.thirdimageall{
+  text-align: center;
+    position: relative;
+    left: 869px;
+    top: -219px;
+}
 
 .userTitle{margin-left:60px}

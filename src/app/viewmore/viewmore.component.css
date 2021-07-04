@@ -1932,6 +1932,48 @@ img{ max-width:100%;}
 }
 @media (max-width:767px)
 {
+  .textfooterheader1{
+    position: relative;left: 154px;
+  }
+  .footee{
+    text-align: center;
+  }
+  .weddingfooter{
+    margin-left: 262px;
+  }
+  .footerabout{
+    margin-left: -46px;
+
+  }
+  .firstimage1{
+   margin-top: 50px;
+  }
+  .secondimageall1{
+
+    text-align: center;
+    margin-top: 33px;
+    position: relative;
+    left: -1px;
+
+  }
+  .thirdimageall1{
+    text-align: center;
+    margin-top: 33px;
+  }
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
   .social-icons li.title
   {
     display:block;
@@ -3957,7 +3999,16 @@ img{ max-width:100%;}
   {
     text-align:center
   }
+
+  .secondpage .image3 {
+    /* background: url("../../assets/img/work-3.jpg") center no-repeat; */
+    background-size: cover;
+    height: 37vh;
+    width: 292%;
+    text-align: center;
+  }
 }
+
 .social-icons
 {
   padding-left:0;
@@ -4022,12 +4073,100 @@ img{ max-width:100%;}
 }
 @media (max-width:767px)
 {
+
+  .secondpage .linespacing {
+    text-align: center;
+    margin-left: -238px;
+
+  }
+  .secondpage .linespacing1 {
+    text-align: center;
+    margin-left: 171px;
+
+  }
+  section .secondpage img {
+    max-width: 100%;
+  }
+  .textfooterheader1{
+    position: relative;left: 154px;
+  }
+  .footee{
+    text-align: center;
+  }
+  .weddingfooter{
+    margin-left: 262px;
+  }
+  .footerabout{
+    margin-left: -46px;
+
+  }
+  .firstimage1{
+   margin-top: 50px;
+  }
+  .secondimageall1{
+
+    text-align: center;
+    margin-top: 33px;
+    position: relative;
+    left: -1px;
+
+  }
+  .thirdimageall1{
+    text-align: center;
+    margin-top: 33px;
+  }
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
   .social-icons li.title
   {
     display:block;
     margin-right:0;
     font-weight:600
   }
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+.work-img{
+  display: block;
+  overflow: hidden;
+  background: #FFF;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.secondimageall{
+  text-align: center;left: -321px;
+  margin-top: 10px;
+}
+.firstimage{
+  text-align: center;left: -321px;
+  margin-top: 10px;
+}
+.fourthimageall{
+  text-align: center;left: -321px;
+  margin-top: 17px;
+}
+.thirdimageall{
+  text-align: center;
+    position: relative;
+    left: 869px;
+    top: -219px;
 }
 .nav-link.active{
   border-bottom: 5px solid #FFFFFF;

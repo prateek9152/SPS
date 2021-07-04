@@ -4008,6 +4008,48 @@ img{ max-width:100%;}
 }
 @media (max-width:767px)
 {
+  .textfooterheader1{
+    position: relative;left: 154px;
+  }
+  .footee{
+    text-align: center;
+  }
+  .weddingfooter{
+    margin-left: 262px;
+  }
+  .footerabout{
+    margin-left: -46px;
+
+  }
+  .firstimage1{
+   margin-top: 50px;
+  }
+  .secondimageall1{
+
+    text-align: center;
+    margin-top: 33px;
+    position: relative;
+    left: -1px;
+
+  }
+  .thirdimageall1{
+    text-align: center;
+    margin-top: 33px;
+  }
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
   .social-icons li.title
   {
     display:block;
