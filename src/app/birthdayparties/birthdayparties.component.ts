@@ -31,7 +31,13 @@ export class BirthdaypartiesComponent implements OnInit {
   display1 = false;
   display2 = false;
   display3 = false;
-
+  display4 = false;
+  showDiv = {
+    previous : false,
+    current : false,
+    next : false,
+    fourth:false
+  }
   constructor(public fileUploadService: FileUploadService) {
     this.getUsers();
    }
@@ -88,5 +94,8 @@ getUsers() {
    showProject3(){
     //  this.showProjects = true;
      this.display3 = !this.display3;
+   }
+   showProject4(){
+     this.display4 = !this.display4;
    }
 }

@@ -1080,7 +1080,6 @@ width: 100%;
 .card-blog .card-title {
   font-size: 1.3rem;
   margin-top: .6rem;
-  color:black;
 }
 
 .card-blog .card-description {
@@ -1692,7 +1691,7 @@ view{
     rgba(0,0,0,0.8),
     rgba(0,0,0,0.8)
     ),
-    url(../../assets/img/post-3.jpg);
+    url(../../assets/img/EngagementWeddingBackground.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
@@ -3025,7 +3024,6 @@ width: 100%;
 .card-blog .card-title {
   font-size: 1.3rem;
   margin-top: .6rem;
-  color:black;
 }
 
 .card-blog .card-description {
@@ -3625,12 +3623,22 @@ view{
     rgba(0,0,0,0.8),
     rgba(0,0,0,0.8)
     ),
-    url(../../assets/img/intro-bg.jpg);
+    url(../../assets/img/EngagementWeddingBackground.jpg);
   background-size: cover;
   background-position: top;
   position: relative;
 }
-
+.header1 {
+  height: 65vh;
+  background-image: linear-gradient(
+    rgba(0,0,0,0.8),
+    rgba(0,0,0,0.8)
+    ),
+    url(../../assets/img/weddingfunctions.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
 .page-heading {
   position: absolute;
   top: 40%;
@@ -3912,7 +3920,7 @@ img{ max-width:100%;}
 }
 .site-footer .social-icons
 {
-  text-align:right;
+  text-align:right
 }
 .site-footer .social-icons a
 {
@@ -3946,6 +3954,7 @@ img{ max-width:100%;}
     text-align:center;
     position: relative;
     top: -2px;
+
   }
 }
 .social-icons
@@ -4012,54 +4021,69 @@ img{ max-width:100%;}
 {
   background-color:#ea4c89
 }
-
-  @media (max-width:767px)
-  {
-    .textfooterheader1{
-      position: relative;left: 154px;
-    }
-    .footee{
-      text-align: center;
-    }
-    .weddingfooter{
-      margin-left: 262px;
-    }
-    .footerabout{
-      margin-left: -46px;
-
-    }
-    .firstimage1{
-     margin-top: 50px;
-    }
-    .secondimageall1{
-
-      text-align: center;
-      margin-top: 33px;
-      position: relative;
-      left: -1px;
-
-    }
-    .thirdimageall1{
-      text-align: center;
-      margin-top: 33px;
-    }
-    .site-footer
-    {
-      padding-bottom:0
-    }
-    .site-footer .copyright-text,.site-footer .social-icons
-    {
-      text-align:center
-    }
-    .social-icons li.title
-    {
-      display:block;
-      margin-right:0;
-      font-weight:600
-    }
+@media (max-width:767px)
+{
+  .textfooterheader1{
+    position: relative;left: 154px;
   }
+  .footee{
+    text-align: center;
+  }
+  .weddingfooter{
+    margin-left: 262px;
+  }
+  .footerabout{
+    margin-left: -46px;
 
+  }
+  .firstimage1{
+   margin-top: 50px;
+  }
+  .secondimageall1{
 
+    text-align: center;
+    margin-top: 33px;
+    position: relative;
+    left: -1px;
+
+  }
+  .thirdimageall1{
+    text-align: center;
+    margin-top: 33px;
+  }
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+  .innerimage1{
+    width: 47%;
+    position: relative;
+    left: -191px;
+    margin-left: -47px;
+  }
+  .secondinnerimage1{
+    width: 47%;
+    position: relative;
+    left: 264px;
+    margin-left: -47px;
+  }
+  .thirdinnerimage1{
+    width: 37%;
+      position: relative;
+      left: 795px;
+      margin-left: -49px;
+  }
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
 .nav-link.active{
   border-bottom: 5px solid #FFFFFF;
 
@@ -4070,12 +4094,6 @@ img{ max-width:100%;}
   background: #FFF;
   padding: 15px;
   margin-bottom: 15px;
-}
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .secondimageall{
   text-align: center;left: -321px;
@@ -4095,4 +4113,22 @@ img{ max-width:100%;}
     left: 869px;
     top: -219px;
 }
+.innerimage{
+  width: 210%;
+    position: relative;
+    left: 243px;
 
+}
+.secondinnerimage{
+  width: 210%;
+  position: relative;
+    left: -216px;
+}
+.thirdinnerimage{
+
+  width: 273%;
+  position: relative;
+  left: -748px;
+  margin-top: 10px;
+
+}
